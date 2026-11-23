@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("c");
+letters.add("d");
+letters.add("e");
+let text = "";
+for (const x of letters) {
+text += x;
+document.getElementById("demo").innerHTML += text + "<br/>";
+}
+let i="";
+for(i = 4; i < 100; i++){
+document.getElementById("demo").innerHTML += i + "<br/>";
+ 
+const fruits = new Map([
+    ["a", 500],
+    ["b", 300],
+    ["c", 200]
+]);
+
+let numb = fruits.get("b");
+document.getElementById("demo").innerHTML += numb;
+}
+</script>
+</body>
+
+
+</html>
